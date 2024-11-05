@@ -68,10 +68,12 @@ font-family: 'Nunito' sans-serif;
 font-size: 16px;
 font-weight: 400;
 line-height: 24px;
-text-align: left;
+
 color: var(--grayscale-gray-500, #7A7B9F);
 
+
     }
+ 
 
     .maior {
         width: 644px;
@@ -119,14 +121,19 @@ background-repeat: no-repeat;
     }
 
     .enorme {
-        width: 682px;
-height: 200px;
-gap: 8px;
-border-radius: 6px;
-border: 1px;
-opacity: 0px;
+    
+        width: 641px;
+        height: 200px;
+        padding: 12px 16px;
+        gap: 8px;
+        border-radius: 6px;
+        border: 1px;
+        opacity: 0px;
+        
 border: 1px solid var(--grayscale-gray-300, #1A1B2D);
 background-color: rgb(15, 15, 26);
+
+
     }
     .osdois {
 display: flex;
@@ -179,3 +186,187 @@ opacity: 0px;
         align-items: center;
         justify-content: flex-end;
     }
+    @media (max-width: 1200px) {
+        .osdois {
+            flex-direction: column; /* Muda para coluna em telas menores */
+            align-items: center; /* Centraliza o conteúdo */
+        }
+    
+        .esquerda, .direita {
+            width: 100%; /* Torna as colunas responsivas */
+            max-width: none; /* Remove o limite máximo */
+        }
+    
+        .aa {
+            width: 100%; /* Ajusta a imagem */
+            height: auto; /* Mantém a proporção */
+        }
+    
+        .maior,
+        .menores,
+        .menores2,
+        .enorme {
+            width: 90%; /* Ajusta a largura dos inputs */
+            max-width: none; /* Remove o limite máximo */
+        }
+    
+        .lado {
+            flex-direction: column; /* Muda para coluna para melhor adaptação */
+            gap: 10px; /* Ajusta o espaçamento */
+        }
+    
+        .topo {
+            flex-direction: column; /* Muda para coluna em telas menores */
+            align-items: flex-start; /* Alinhamento à esquerda */
+        }
+    
+        .butastrar,
+        .butmes,
+        .ok {
+            width: 100%; /* Torna os botões responsivos */
+            margin-top: 10px; /* Espaçamento entre botões */
+        }
+    
+        img {
+            width: 30px; /* Ajusta a largura das imagens */
+            height: 30px; /* Ajusta a altura das imagens */
+        }
+    }
+    
+    @media (max-width: 768px) {
+        h2 {
+            font-size: 18px; /* Reduz o tamanho da fonte para h2 */
+        }
+    
+        span {
+            font-size: 14px; /* Reduz o tamanho da fonte do span */
+        }
+    
+        .butastrar,
+        .butmes,
+        .ok {
+            height: 36px; /* Ajusta a altura dos botões */
+            font-size: 14px; /* Reduz o tamanho da fonte dos botões */
+        }
+    
+        .maior,
+        .menores,
+        .menores2,
+        .enorme {
+            height: 40px; /* Ajusta a altura dos inputs */
+            font-size: 14px; /* Reduz o tamanho da fonte dos inputs */
+        }
+    }
+    
+    @media (max-width: 480px) {
+        h2 {
+            font-size: 16px; /* Reduz ainda mais o tamanho da fonte para h2 */
+        }
+    
+        span {
+            font-size: 12px; /* Reduz ainda mais o tamanho da fonte do span */
+        }
+    
+        .butastrar,
+        .butmes,
+        .ok {
+            height: 30px; /* Ajusta a altura dos botões para telas muito pequenas */
+            font-size: 12px; /* Reduz o tamanho da fonte dos botões */
+        }
+    
+        .maior,
+        .menores,
+        .menores2,
+        .enorme {
+            height: 30px; /* Ajusta a altura dos inputs para telas muito pequenas */
+            font-size: 12px; /* Reduz o tamanho da fonte dos inputs */
+        }
+    
+        .topo {
+            padding: 10px; /* Ajusta o padding do topo */
+        }
+    }
+    @media (max-width: 1200px) {
+        body {
+            background-color: rgb(15, 15, 26);
+        }
+    
+        .osdois {
+            flex-direction: column; /* Coloca as colunas em vertical */
+            align-items: center; /* Centraliza horizontalmente */
+        }
+    
+        .esquerda, .direita {
+            width: 100%; /* Colunas ocupam 100% da largura */
+            max-width: 100%; /* Remove o limite máximo */
+        }
+    
+        .maior,
+        .menores,
+        .menores2,
+        .enorme {
+            width: 90%; /* Ajusta largura dos inputs */
+            max-width: none; /* Remove o limite máximo */
+            margin: 0 auto; /* Centraliza os inputs */
+        }
+    
+        .topo {
+            flex-direction: column; /* Alinha verticalmente em telas menores */
+            align-items: flex-start; /* Alinhamento à esquerda */
+        }
+    
+        .butastrar, .butmes, .ok {
+            width: 100%; /* Botões ocupam 100% da largura */
+            margin-top: 10px; /* Espaçamento entre botões */
+        }
+    
+        img {
+            width: 30px; /* Ajusta o tamanho das imagens */
+            height: 30px;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        h2 {
+            font-size: 18px; /* Tamanho da fonte reduzido */
+        }
+    
+        span {
+            font-size: 14px; /* Tamanho da fonte reduzido */
+        }
+    
+        .butastrar, .butmes, .ok {
+            height: 36px; /* Ajusta altura dos botões */
+            font-size: 14px; /* Tamanho da fonte dos botões */
+        }
+    
+        .maior, .menores, .menores2, .enorme {
+            height: 40px; /* Ajusta altura dos inputs */
+            font-size: 14px; /* Tamanho da fonte dos inputs */
+        }
+    }
+    
+    @media (max-width: 480px) {
+        h2 {
+            font-size: 16px; /* Tamanho da fonte ainda menor */
+        }
+    
+        span {
+            font-size: 12px; /* Tamanho da fonte ainda menor */
+        }
+    
+        .butastrar, .butmes, .ok {
+            height: 30px; /* Altura dos botões */
+            font-size: 12px; /* Tamanho da fonte dos botões */
+        }
+    
+        .maior, .menores, .menores2, .enorme {
+            height: 30px; /* Altura dos inputs */
+            font-size: 12px; /* Tamanho da fonte dos inputs */
+        }
+    
+        .topo {
+            padding: 10px; /* Ajusta padding do topo */
+        }
+    }
+    
