@@ -124,7 +124,7 @@ background-repeat: no-repeat;
     
         width: 641px;
         height: 200px;
-        padding: 12px 16px;
+        padding: 12px 22px;
         gap: 8px;
         border-radius: 6px;
         border: 1px;
@@ -186,187 +186,127 @@ opacity: 0px;
         align-items: center;
         justify-content: flex-end;
     }
-    @media (max-width: 1200px) {
-        .osdois {
-            flex-direction: column; /* Muda para coluna em telas menores */
-            align-items: center; /* Centraliza o conteúdo */
-        }
-    
-        .esquerda, .direita {
-            width: 100%; /* Torna as colunas responsivas */
-            max-width: none; /* Remove o limite máximo */
-        }
-    
-        .aa {
-            width: 100%; /* Ajusta a imagem */
-            height: auto; /* Mantém a proporção */
-        }
-    
-        .maior,
-        .menores,
-        .menores2,
-        .enorme {
-            width: 90%; /* Ajusta a largura dos inputs */
-            max-width: none; /* Remove o limite máximo */
-        }
-    
-        .lado {
-            flex-direction: column; /* Muda para coluna para melhor adaptação */
-            gap: 10px; /* Ajusta o espaçamento */
-        }
-    
-        .topo {
-            flex-direction: column; /* Muda para coluna em telas menores */
-            align-items: flex-start; /* Alinhamento à esquerda */
-        }
-    
-        .butastrar,
-        .butmes,
-        .ok {
-            width: 100%; /* Torna os botões responsivos */
-            margin-top: 10px; /* Espaçamento entre botões */
-        }
-    
-        img {
-            width: 30px; /* Ajusta a largura das imagens */
-            height: 30px; /* Ajusta a altura das imagens */
-        }
+   /* Ajustes para telas menores que 1200px */
+/* Ajustes para telas menores que 1200px */
+/* Ajustes para telas menores que 1200px */
+/* Ajustes para telas menores que 1200px */
+/* Ajustes para telas menores que 1200px */
+/* Ajustes para telas menores que 1200px */
+
+@media (max-width: 1200px) {
+    /* Espaçamento para o placeholder */
+    input[type="text"]::placeholder,
+    input[type="number"]::placeholder {
+        padding-left: 35px; /* Ajusta o espaço para o ícone */
     }
-    
-    @media (max-width: 768px) {
-        h2 {
-            font-size: 18px; /* Reduz o tamanho da fonte para h2 */
-        }
-    
-        span {
-            font-size: 14px; /* Reduz o tamanho da fonte do span */
-        }
-    
-        .butastrar,
-        .butmes,
-        .ok {
-            height: 36px; /* Ajusta a altura dos botões */
-            font-size: 14px; /* Reduz o tamanho da fonte dos botões */
-        }
-    
-        .maior,
-        .menores,
-        .menores2,
-        .enorme {
-            height: 40px; /* Ajusta a altura dos inputs */
-            font-size: 14px; /* Reduz o tamanho da fonte dos inputs */
-        }
+}
+
+@media (max-width: 1200px) {
+    .topo {
+        justify-content: space-between;
+        padding: 10px;
     }
-    
-    @media (max-width: 480px) {
-        h2 {
-            font-size: 16px; /* Reduz ainda mais o tamanho da fonte para h2 */
-        }
-    
-        span {
-            font-size: 12px; /* Reduz ainda mais o tamanho da fonte do span */
-        }
-    
-        .butastrar,
-        .butmes,
-        .ok {
-            height: 30px; /* Ajusta a altura dos botões para telas muito pequenas */
-            font-size: 12px; /* Reduz o tamanho da fonte dos botões */
-        }
-    
-        .maior,
-        .menores,
-        .menores2,
-        .enorme {
-            height: 30px; /* Ajusta a altura dos inputs para telas muito pequenas */
-            font-size: 12px; /* Reduz o tamanho da fonte dos inputs */
-        }
-    
-        .topo {
-            padding: 10px; /* Ajusta o padding do topo */
-        }
+
+    .osdois {
+        flex-direction: column;
+        align-items: center;
     }
-    @media (max-width: 1200px) {
-        body {
-            background-color: rgb(15, 15, 26);
-        }
-    
-        .osdois {
-            flex-direction: column; /* Coloca as colunas em vertical */
-            align-items: center; /* Centraliza horizontalmente */
-        }
-    
-        .esquerda, .direita {
-            width: 100%; /* Colunas ocupam 100% da largura */
-            max-width: 100%; /* Remove o limite máximo */
-        }
-    
-        .maior,
-        .menores,
-        .menores2,
-        .enorme {
-            width: 90%; /* Ajusta largura dos inputs */
-            max-width: none; /* Remove o limite máximo */
-            margin: 0 auto; /* Centraliza os inputs */
-        }
-    
-        .topo {
-            flex-direction: column; /* Alinha verticalmente em telas menores */
-            align-items: flex-start; /* Alinhamento à esquerda */
-        }
-    
-        .butastrar, .butmes, .ok {
-            width: 100%; /* Botões ocupam 100% da largura */
-            margin-top: 10px; /* Espaçamento entre botões */
-        }
-    
-        img {
-            width: 30px; /* Ajusta o tamanho das imagens */
-            height: 30px;
-        }
+
+    .esquerda, .direita, .maior, .enorme, .lado, .menores, .menores2 {
+        width: 100%;
+        max-width: 100%;
+        margin: 0; /* Remove margens extras */
+        padding: 0; /* Remove espaçamentos laterais */
     }
-    
-    @media (max-width: 768px) {
-        h2 {
-            font-size: 18px; /* Tamanho da fonte reduzido */
-        }
-    
-        span {
-            font-size: 14px; /* Tamanho da fonte reduzido */
-        }
-    
-        .butastrar, .butmes, .ok {
-            height: 36px; /* Ajusta altura dos botões */
-            font-size: 14px; /* Tamanho da fonte dos botões */
-        }
-    
-        .maior, .menores, .menores2, .enorme {
-            height: 40px; /* Ajusta altura dos inputs */
-            font-size: 14px; /* Tamanho da fonte dos inputs */
-        }
+
+    .butastrar, .butmes, .ok {
+        width: auto;
+        margin-top: 10px;
     }
-    
-    @media (max-width: 480px) {
-        h2 {
-            font-size: 16px; /* Tamanho da fonte ainda menor */
-        }
-    
-        span {
-            font-size: 12px; /* Tamanho da fonte ainda menor */
-        }
-    
-        .butastrar, .butmes, .ok {
-            height: 30px; /* Altura dos botões */
-            font-size: 12px; /* Tamanho da fonte dos botões */
-        }
-    
-        .maior, .menores, .menores2, .enorme {
-            height: 30px; /* Altura dos inputs */
-            font-size: 12px; /* Tamanho da fonte dos inputs */
-        }
-    
-        .topo {
-            padding: 10px; /* Ajusta padding do topo */
-        }
+
+    img {
+        width: 30px;
+        height: 30px;
     }
-    
+.lado {
+    gap: 20px;
+}
+}
+
+/* Ajustes para telas menores que 900px */
+@media (max-width: 900px) {
+    span {
+        display: none; /* Oculta o texto "Olá, Jordan" */
+    }
+
+    .direito {
+        gap: 10px;
+    }
+
+    .esquerda, .direita, .maior, .enorme, .lado, .menores, .menores2 {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+/* Ajustes para telas menores que 768px */
+@media (max-width: 768px) {
+    .topo {
+        justify-content: flex-start;
+        padding: 8px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    span {
+        font-size: 14px;
+    }
+
+    .butastrar, .butmes, .ok {
+        height: 36px;
+        font-size: 14px;
+    }
+
+    .esquerda, .direita, .maior, .enorme, .lado, .menores, .menores2 {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+/* Ajustes para telas menores que 480px */
+@media (max-width: 480px) {
+    .topo {
+        padding: 5px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    span {
+        font-size: 12px;
+    }
+
+    .butastrar, .butmes, .ok {
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .esquerda, .direita, .maior, .enorme, .lado, .menores, .menores2 {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    img {
+        width: 18px;
+        height: 18px;
+    }
+}
